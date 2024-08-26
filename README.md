@@ -16,6 +16,9 @@ https://johnresig.com/blog/write-code-every-day/
 
 ## TODO
 
+
+exec into a pod via client-go
+
 https://able8.medium.com/use-client-go-to-generate-an-event-object-in-kuberentes-b0d2ea356528
 
 ---
@@ -23,4 +26,4 @@ https://able8.medium.com/use-client-go-to-generate-an-event-object-in-kuberentes
 
 ### [20240826-go-ensuring-thread-safe-file-caching-with-local-storage](20240826-go-ensuring-thread-safe-file-caching-with-local-storage/)
 
-[Ensuring Thread-Safe File Caching with Local Storage in Go](https://medium.com/@radhian.amri/ensuring-thread-safe-file-caching-with-local-storage-in-go-8d137fb7d6d4)
+[Ensuring Thread-Safe File Caching with Local Storage in Go](https://medium.com/@radhian.amri/ensuring-thread-safe-file-caching-with-local-storage-in-go-8d137fb7d6d4) 40 mins
