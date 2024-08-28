@@ -16,11 +16,15 @@ https://johnresig.com/blog/write-code-every-day/
 
 ## TODO
 
-exec into a pod via client-go
-
 https://able8.medium.com/use-client-go-to-generate-an-event-object-in-kuberentes-b0d2ea356528
 
 ---
+
+------
+
+### 20240828-client-go-exec-to-pod
+
+https://dragondscv.medium.com/running-remote-command-inside-a-container-with-kubernetes-api-29f3402dcf3a 30 mins
 
 ### 20240827-go-gorilla-websocket-examples
 
