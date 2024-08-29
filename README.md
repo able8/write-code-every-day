@@ -18,9 +18,19 @@ https://johnresig.com/blog/write-code-every-day/
 
 https://able8.medium.com/use-client-go-to-generate-an-event-object-in-kuberentes-b0d2ea356528
 
----
+https://freshman.tech/file-upload-golang/?ref=related-posts
+
+https://github.com/iximiuz/client-go-examples
+
+https://github.com/kubernetes-sigs/controller-runtime
+
 
 ------
+
+### 20240829-go-image-base64-encoding
+
+https://freshman.tech/snippets/go/image-to-base64/ 35 mins 
+
 
 ### 20240828-client-go-exec-to-pod
 
