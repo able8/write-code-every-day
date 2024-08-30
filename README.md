@@ -24,8 +24,11 @@ https://github.com/iximiuz/client-go-examples
 
 https://github.com/kubernetes-sigs/controller-runtime
 
-
 ------
+
+### 20240830-k8s-controller-runtime-example-1
+
+https://github.com/kubernetes-sigs/controller-runtime/tree/main/examples 55 mins
 
 ### 20240829-go-image-base64-encoding
 
@@ -39,7 +42,6 @@ https://dragondscv.medium.com/running-remote-command-inside-a-container-with-kub
 ### 20240827-go-gorilla-websocket-examples
 
 https://github.com/gorilla/websocket/tree/main/examples  42 mins
-
 
 ### 20240826-go-ensuring-thread-safe-file-caching
 
