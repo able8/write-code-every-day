@@ -16,6 +16,8 @@ https://johnresig.com/blog/write-code-every-day/
 
 ## TODO
 
+https://jbrandhorst.com/post/grpc-json/
+
 https://able8.medium.com/use-client-go-to-generate-an-event-object-in-kuberentes-b0d2ea356528
 
 https://freshman.tech/file-upload-golang/?ref=related-posts
@@ -25,6 +27,12 @@ https://github.com/iximiuz/client-go-examples
 https://github.com/kubernetes-sigs/controller-runtime
 
 ------
+
+------
+
+### 20240831-k8s-controller-runtime-example-2
+
+https://book.kubebuilder.io/cronjob-tutorial/controller-overview 45 mins
 
 ### 20240830-k8s-controller-runtime-example-1
 
