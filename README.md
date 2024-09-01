@@ -16,6 +16,14 @@ https://johnresig.com/blog/write-code-every-day/
 
 ## TODO
 
+https://darjun.github.io/post/
+
+https://req.cool/docs/tutorial/debugging/
+
+https://req.cool/docs/examples/enable-debug-via-flag-or-env/
+
+https://req.cool/docs/examples/enable-debug-dynamically-in-production/
+
 https://jbrandhorst.com/post/grpc-json/
 
 https://able8.medium.com/use-client-go-to-generate-an-event-object-in-kuberentes-b0d2ea356528
@@ -29,6 +37,12 @@ https://github.com/kubernetes-sigs/controller-runtime
 ------
 
 ------
+
+------
+
+### 20240901-go-exec
+
+https://darjun.github.io/2022/11/01/godailylib/osexec/  30 mins
 
 ### 20240831-k8s-controller-runtime-example-2
 
