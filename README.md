@@ -24,9 +24,17 @@ https://freshman.tech/file-upload-golang/?ref=related-posts
 
 https://github.com/iximiuz/client-go-examples
 
+https://github.com/iximiuz/client-go-examples/tree/main/label-selectors
+
 https://github.com/kubernetes-sigs/controller-runtime
 
 ------
+20240904 21:31 周三
+
+
+### 20240904-k8s-watch-and-informer
+
+https://github.com/iximiuz/client-go-examples/tree/main/watch-typed-simple 30 mins
 
 ### 20240903-grpc-json-example
 
@@ -51,7 +59,6 @@ https://github.com/kubernetes-sigs/controller-runtime/tree/main/examples 55 mins
 ### 20240829-go-image-base64-encoding
 
 https://freshman.tech/snippets/go/image-to-base64/ 35 mins 
-
 
 ### 20240828-client-go-exec-to-pod
 
