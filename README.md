@@ -30,7 +30,14 @@ https://github.com/kubernetes-sigs/controller-runtime
 
 ------
 
-### [20240905-k8s-cli-runtime](20240905-k8s-cli-runtime))
+20240906 22:08 周五
+
+### 20240906-k8s-client-go-examples
+
+https://github.com/iximiuz/client-go-examples 33 mins
+
+
+### [20240905-k8s-cli-runtime](20240905-k8s-cli-runtime)
 
 https://github.com/iximiuz/client-go-examples/tree/main/cli-runtime-flags  30 mins
 
