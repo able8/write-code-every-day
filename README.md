@@ -22,15 +22,15 @@ https://able8.medium.com/use-client-go-to-generate-an-event-object-in-kuberentes
 
 https://freshman.tech/file-upload-golang/?ref=related-posts
 
-https://github.com/iximiuz/client-go-examples
-
-https://github.com/iximiuz/client-go-examples/tree/main/label-selectors
-
-https://github.com/kubernetes-sigs/controller-runtime
-
 ------
 
-20240906 22:08 周五
+### 20240908-go-colly-examples-1
+
+https://darjun.github.io/2021/06/30/godailylib/colly/ 30 mins
+
+### 20240907-k8s-client-go-workqueue
+
+https://github.com/kubernetes/client-go/tree/master/examples/workqueue  30 mins
 
 ### 20240906-k8s-client-go-examples
 
