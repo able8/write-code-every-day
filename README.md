@@ -24,6 +24,10 @@ https://freshman.tech/file-upload-golang/?ref=related-posts
 
 ------
 
+### 20240909-go-get-remote-ssl-certificate
+
+https://www.freecodecamp.org/news/how-to-validate-ssl-jjj/ 50 mins
+
 ### 20240908-go-colly-examples-1
 
 https://darjun.github.io/2021/06/30/godailylib/colly/ 30 mins
