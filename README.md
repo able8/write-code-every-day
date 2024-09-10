@@ -24,6 +24,10 @@ https://freshman.tech/file-upload-golang/?ref=related-posts
 
 ------
 
+### 20240910-go-port-scanner
+
+https://medium.com/@KentGruber/building-a-high-performance-port-scanner-with-golang-9976181ec39d 50 mins
+
 ### 20240909-go-get-remote-ssl-certificate
 
 https://www.freecodecamp.org/news/how-to-validate-ssl-jjj/ 50 mins
