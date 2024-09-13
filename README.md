@@ -24,11 +24,18 @@ https://freshman.tech/file-upload-golang/?ref=related-posts
 
 https://github.com/akutz/go-generics-the-hard-way/blob/main/03-getting-started/05-composite-constraints.md
 
----
+https://github.com/samber/lo
+
+------
+
+
+### 20240912-go-lodash-library 
+
+https://github.com/samber/lo  35 mins
 
 ### 20240911-go-generics-examples
 
-https://go.dev/doc/tutorial/generics  40mins
+https://go.dev/doc/tutorial/generics  40 mins
 
 ### 20240910-go-port-scanner
 
