@@ -22,12 +22,12 @@ https://able8.medium.com/use-client-go-to-generate-an-event-object-in-kuberentes
 
 https://freshman.tech/file-upload-golang/?ref=related-posts
 
-https://github.com/akutz/go-generics-the-hard-way/blob/main/03-getting-started/05-composite-constraints.md
-
-https://github.com/samber/lo
-
+https://github.com/mattn/go-generics-example
 ------
 
+### 20240913-go-generics-the-hard-way
+
+https://github.com/akutz/go-generics-the-hard-way/blob/main/03-getting-started/05-composite-constraints.md  35 mins
 
 ### 20240912-go-lodash-library 
 
