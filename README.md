@@ -22,8 +22,11 @@ https://able8.medium.com/use-client-go-to-generate-an-event-object-in-kuberentes
 
 https://freshman.tech/file-upload-golang/?ref=related-posts
 
-https://github.com/mattn/go-generics-example
 ------
+
+### 20240914-go-generics-example
+
+https://github.com/mattn/go-generics-example 50 mins
 
 ### 20240913-go-generics-the-hard-way
 
