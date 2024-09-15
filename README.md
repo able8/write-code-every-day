@@ -22,7 +22,18 @@ https://able8.medium.com/use-client-go-to-generate-an-event-object-in-kuberentes
 
 https://freshman.tech/file-upload-golang/?ref=related-posts
 
+https://eli.thegreenplace.net/tag/go
+
+https://github.com/app-fast/fpgo
+
+https://github.com/valyala/fasthttp?tab=readme-ov-file
+
 ------
+
+### 20240915-go-and-proxy-servers
+
+https://eli.thegreenplace.net/2022/go-and-proxy-servers-part-1-http-proxies/  60 mins
+
 
 ### 20240914-go-generics-example
 
