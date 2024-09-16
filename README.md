@@ -34,7 +34,6 @@ https://github.com/valyala/fasthttp?tab=readme-ov-file
 
 https://eli.thegreenplace.net/2022/go-and-proxy-servers-part-1-http-proxies/  60 mins
 
-
 ### 20240914-go-generics-example
 
 https://github.com/mattn/go-generics-example 50 mins
