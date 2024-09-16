@@ -30,6 +30,11 @@ https://github.com/valyala/fasthttp?tab=readme-ov-file
 
 ------
 
+
+### 20240916-go-resty
+
+https://github.com/go-resty/resty 30 mins
+
 ### 20240915-go-and-proxy-servers
 
 https://eli.thegreenplace.net/2022/go-and-proxy-servers-part-1-http-proxies/  60 mins
