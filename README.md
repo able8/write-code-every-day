@@ -28,8 +28,13 @@ https://github.com/app-fast/fpgo
 
 https://github.com/valyala/fasthttp?tab=readme-ov-file
 
+https://github.com/avelino/awesome-go?tab=readme-ov-file#contents
+
 ------
 
+### 20240917-go-fasthttp-forward-proxy 
+
+https://github.com/app-fast/fpgo 30 mins
 
 ### 20240916-go-resty
 
