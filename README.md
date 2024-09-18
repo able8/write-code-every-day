@@ -24,13 +24,13 @@ https://freshman.tech/file-upload-golang/?ref=related-posts
 
 https://eli.thegreenplace.net/tag/go
 
-https://github.com/app-fast/fpgo
-
-https://github.com/valyala/fasthttp?tab=readme-ov-file
-
 https://github.com/avelino/awesome-go?tab=readme-ov-file#contents
 
 ------
+
+### 20240918-go-new-http-server-routing
+
+https://eli.thegreenplace.net/2023/better-http-server-routing-in-go-122 40 mins
 
 ### 20240917-go-fasthttp-forward-proxy 
 
