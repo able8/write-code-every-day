@@ -28,6 +28,10 @@ https://github.com/avelino/awesome-go?tab=readme-ov-file#contents
 
 ------
 
+### 20240919-go-pubsub-using-channels
+
+https://eli.thegreenplace.net/2020/pubsub-using-channels-in-go/ 30 mins
+
 ### 20240918-go-new-http-server-routing
 
 https://eli.thegreenplace.net/2023/better-http-server-routing-in-go-122 40 mins
