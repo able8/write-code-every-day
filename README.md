@@ -28,6 +28,10 @@ https://github.com/avelino/awesome-go?tab=readme-ov-file#contents
 
 ------
 
+### 20240920-go-on-concurrency-in-http-servers
+
+https://eli.thegreenplace.net/2019/on-concurrency-in-go-http-servers/ 30 mins
+
 ### 20240919-go-pubsub-using-channels
 
 https://eli.thegreenplace.net/2020/pubsub-using-channels-in-go/ 30 mins
