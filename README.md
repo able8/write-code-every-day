@@ -28,6 +28,10 @@ https://github.com/avelino/awesome-go?tab=readme-ov-file#contents
 
 ------
 
+### 20240921-go-gin-examples 
+
+https://github.com/gin-gonic/gin 30 mins
+
 ### 20240920-go-on-concurrency-in-http-servers
 
 https://eli.thegreenplace.net/2019/on-concurrency-in-go-http-servers/ 30 mins
