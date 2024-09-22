@@ -28,6 +28,10 @@ https://github.com/avelino/awesome-go?tab=readme-ov-file#contents
 
 ------
 
+### 20240922-go-validator
+
+https://github.com/go-playground/validator/tree/master 30 mins
+
 ### 20240921-go-gin-examples 
 
 https://github.com/gin-gonic/gin 30 mins
