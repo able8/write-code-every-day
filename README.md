@@ -28,6 +28,10 @@ https://github.com/avelino/awesome-go?tab=readme-ov-file#contents
 
 ------
 
+### 20240923-go-write-ahead-log-examples
+
+https://xiaorui.cc/archives/7304  30 mins
+
 ### 20240922-go-validator
 
 https://github.com/go-playground/validator/tree/master 30 mins
