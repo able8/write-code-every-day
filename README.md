@@ -26,7 +26,13 @@ https://eli.thegreenplace.net/tag/go
 
 https://github.com/avelino/awesome-go?tab=readme-ov-file#contents
 
+https://ollama.com/library
+
 ------
+
+### 20240924-using-ollama-with-langchaingo
+
+https://eli.thegreenplace.net/2023/using-ollama-with-langchaingo/  40 mins
 
 ### 20240923-go-write-ahead-log-examples
 
