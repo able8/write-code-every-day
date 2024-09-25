@@ -16,6 +16,8 @@ https://johnresig.com/blog/write-code-every-day/
 
 ## TODO
 
+https://medium.com/justforfunc
+
 https://darjun.github.io/post/
 
 https://able8.medium.com/use-client-go-to-generate-an-event-object-in-kuberentes-b0d2ea356528
@@ -28,7 +30,12 @@ https://github.com/avelino/awesome-go?tab=readme-ov-file#contents
 
 https://ollama.com/library
 
+
 ------
+
+### 20240925-nil-channels-in-go
+
+https://medium.com/justforfunc/why-are-there-nil-channels-in-go-9877cc0b2308  50 mins
 
 ### 20240924-using-ollama-with-langchaingo
 
