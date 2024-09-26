@@ -33,6 +33,11 @@ https://ollama.com/library
 
 ------
 
+### 20240926-cobra-cli-app-in-go
+
+https://cobra.dev/#getting-started 30 mins
+
+
 ### 20240925-nil-channels-in-go
 
 https://medium.com/justforfunc/why-are-there-nil-channels-in-go-9877cc0b2308  50 mins
