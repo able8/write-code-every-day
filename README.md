@@ -30,8 +30,13 @@ https://github.com/avelino/awesome-go?tab=readme-ov-file#contents
 
 https://ollama.com/library
 
+https://appliedgo.net/futures/
 
 ------
+
+### 20240927-go-refresh-token
+
+https://appliedgo.net/refresh/  35 mins
 
 ### 20240926-cobra-cli-app-in-go
 
