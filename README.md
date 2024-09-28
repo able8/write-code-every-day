@@ -34,6 +34,10 @@ https://appliedgo.net/futures/
 
 ------
 
+### 20240928-go-inject-a-dependency
+
+https://appliedgo.net/di/  40 mins
+
 ### 20240927-go-refresh-token
 
 https://appliedgo.net/refresh/  35 mins

@@ -1,170 +1,3 @@
-/*
-<!--
-Copyright (c) 2019 Christoph Berger. Some rights reserved.
-
-Use of the text in this file is governed by a Creative Commons Attribution Non-Commercial
-Share-Alike License that can be found in the LICENSE.txt file.
-
-Use of the code in this file is governed by a BSD 3-clause license that can be found
-in the LICENSE.txt file.
-
-The source code contained in this file may import third-party source code
-whose licenses are provided in the respective license files.
--->
-
-<!--
-NOTE: The comments in this file are NOT godoc compliant. This is not an oversight.
-
-Comments and code in this file are used for describing and explaining a particular topic to the reader. While this file is a syntactically valid Go source file, its main purpose is to get converted into a blog article. The comments were created for learning and not for code documentation.
--->
-
-+++
-title = "Continuous refresh, or: how to keep your API client authorized"
-description = "Automatically refresh data in the background with a goroutine, channels, and a select statement. No mutex required."
-author = "Christoph Berger"
-email = "chris@appliedgo.net"
-date = "2023-10-18"
-draft = "false"
-categories = ["Concurrent Programming"]
-tags = ["refresh", "goroutine", "channel"]
-articletypes = ["Tutorial"]
-+++
-
-An access token should be initialized and refreshed from a central place, yet be available to umpteenth of client sessions. Dynamic futures to the rescue.
-
-<!--more-->
-
-If web apps could sweat, they would.
-
-On one end, hoards of client sessions request continuous flow of data. On the other end, third-party APIs set rigorous access rules that require using short-lived access tokens.
-
-![Your app server, serving clients and accessing third-party APIs, needs to keep the access token fresh](refresh.svg)
-
-Let an API access token expire and chaos starts. All open client sessions would run into errors! Bad user experience. So better keep the token fresh.
-
-However, do not let each client session request a new access token for the same API. Only the last request wins, and all others have received a token that is already invalidated by subsequent refresh requests.
-
-So if many client sessions access the same API, you need to manage the token refresh centrally and distribute the current token to client sessions.
-
-I am sure that there are many ways to do this, but here is one that is quick to implement and easy to understand. I call this approach "dynamic futures", in lack of a standard (or at least, a better) term.
-
-## Dynamic futures
-
-If the word "futures" lets you think of our planet's potential destinies rather than programming paradigms, the article about [futures in Go][futures] gets you back on track.
-
-TL;DR: A future is a variable whose value does not exist initially but will be available after it gets computed. In Go, a future can be trivially implemented as a goroutine with a result channel.
-
-```go
-result := make(chan int)
-
-go func() {
-	result <- compute()
-}()
-
-// other activity...
-
-future := <-result
-```
-
-In this article, I want to leverage this mechanism to create a future that updates itself in the background. I pose several requirements to the implementation:
-
-- All concurrent work shall be hidden from the client. No channels or other concurrency constructs shall leak to the client side. The client shall be able to always get a current and valid access token by a simple method call.
-- Use standard Go concurrency ingredients only.
-- Use the standard library only. (This rules out using [`singleflight`][singleflight] or similar packages.)
-
-
-## The challenge: orchestrating token refreshes and client requests
-
-Scenario: A web app serves many clients. It also needs to call a third-party web API to fetch various data. This third-party API requires an access token that expires after a certain time. The web app must refresh the token on time, or else it would not be able to fetch more data from the API, and the client sessions would be blocked.
-
-Furthermore, the web app must abide by the following rules:
-1. The solution must not provide a client with an expired token
-2. No client session should be blocked for an unacceptable amount of time
-
-Let's see if we can implement all of these requirements and rules with minimal effort.
-
-## The starting point: a future that can be read more than once
-
-With a slight modification, we can make the "future" code from above return the computed result as often as we want.
-
-```go
-c := make(chan int)
-n := 256
-
-go func(input int, result chan<- int) {
-	value := calculate(input)
-	for {
-		result <- value
-	}
-}(n, c)
-```
-
-The code can now read the channel as often as it wants.
-
-```go
-value1 := <-c
-value2 := <-c  // Read again, get the same value again
-```
-
-## How to serve a value and compute a new one in the background
-
-The above future implementation computes the result only once. To update the result in the background, we need a way of reading and writing the result in a concurrency-safe way.
-
-Did anyone shout, "mutex!"?
-
-Mutexes do work, but there is a better way: [**a `select` statement.**][select]
-
-As a quick recap, a `select` statement is like a `switch` statement, except that the `case` conditions are channel read or write operations. That is, every `case` condition attempts to either read from or write to a channel. If a channel is not ready, the affected `case` blocks until the channel is ready. If more than one channel become ready for reading or writing, the `select` statement randomly selects one of the unblocked `case`s for execution. The other `case`s remain blocked until the running case completes.
-
-This mechanism provides an elegant way of serializing access to resources and avoid data races, without having to use mutexes.
-
-Here is how the `select` statement can help implement our "dynamic future":
-
-```go
-go func(ctx context.Context, token chan<- string) {
-	tok, lifeSpan := authorize()
-	expired := time.After(lifeSpan - safetyMargin)
-
-	for {
-		select {
-		case token <- tok:
-			// NOP
-		case <-expired:
-			tok, lifeSpan = authorize()
-			expired = time.After(lifeSpan - safetyMargin)
-		case <-ctx.Done():
-			return
-		}
-	}
-}
-```
-
-### What happens here?
-
-1. When the goroutine starts, it fetches an initial access token by calling function `authorize()` (that I will not define here, let's assume some black-box token refreshing logic). The function returns a new token and the token's lifespan (as a duration).
-2. Then, the goroutine starts a timer that expires shortly before the token expires.
-3. The goroutine enters an infinite loop that consists of a `select` statement with two cases.
-4. The first case unblocks when a client attempts to read the `token` channel. The case sends the current token to the channel, and the loop starts over. Everything happens in the case condition, hence the case body is empty.
-5. The second case unblocks when the timer fires. It fetches a new token and sets a new timer.
-6. The `context` parameter `ctx` is a standard mechanism in Go for managing multiple goroutines inside a common context. Passing a cancelable `context` value to the goroutine allows stopping the goroutine automatically when the context is canceled. That's what the third `case` is for.
-
-That's it! That's all the magic of our self-updating future.
-
-### Why does this work?
-
-The code makes use of the fundamental property of the `select` statement that I mentioned above.
-
-The `select` statement randomly selects one of the unblocked `case`s for execution. It is not possible that two `case`s are unblocked at the same time. No data race can happen from simultaneous access to `tok` from both cases.
-
-Hence, if a client reads the `token` channel, it can do so undisturbed.
-
-And if the timer fires and the code calls the authorization API to refresh the access token, no client is able to read the current token anymore that can become invalidated at any time during the refresh.
-
-But theory is cheap, so let's go through a working demo code.
-
-## The code
-*/
-
 // ## Imports and globals
 //
 // The package name must be `main` to make the code run in the Go playground. In real life, the package would be a library package named, for example, `auth`.
@@ -366,6 +199,8 @@ func TestTokenGet(t *testing.T) {
 				log.Printf("Client %d token: %s, err: %v\n", n, t, err)
 				time.Sleep(tokenLifeSpan / 5)
 			}
+
+			time.Sleep(time.Second)
 		}
 	}
 
@@ -414,7 +249,6 @@ type MToken struct {
 
 // Create a new token object.
 func NewMToken(ctx context.Context, auth func() (string, time.Duration, error)) *MToken {
-
 	m := &MToken{
 		authorize: authFunc,
 		ctx:       ctx,
