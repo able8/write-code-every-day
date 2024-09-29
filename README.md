@@ -30,9 +30,10 @@ https://github.com/avelino/awesome-go?tab=readme-ov-file#contents
 
 https://ollama.com/library
 
-https://appliedgo.net/futures/
 
-------
+### 20240929-go-futures
+
+https://appliedgo.net/futures/  30 mins
 
 ### 20240928-go-inject-a-dependency
 
