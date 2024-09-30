@@ -31,6 +31,10 @@ https://github.com/avelino/awesome-go?tab=readme-ov-file#contents
 https://ollama.com/library
 
 
+### 20240930-go-slog-package
+
+https://gopherguides.com/articles/golang-slog-package 30 mins
+
 ### 20240929-go-futures
 
 https://appliedgo.net/futures/  30 mins
