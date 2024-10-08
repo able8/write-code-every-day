@@ -31,6 +31,12 @@ https://github.com/avelino/awesome-go?tab=readme-ov-file#contents
 https://ollama.com/library
 
 
+### 20241008-go-gobyexample-1
+
+https://gobyexample.com/  35 mins
+
+### holidays
+
 ### 20240930-go-slog-package
 
 https://gopherguides.com/articles/golang-slog-package 30 mins
