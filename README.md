@@ -30,6 +30,11 @@ https://github.com/avelino/awesome-go?tab=readme-ov-file#contents
 
 https://ollama.com/library
 
+20241009 20:49 周三
+
+### 20241009-go-gobyexample-2
+
+https://gobyexample.com/  40 mins
 
 ### 20241008-go-gobyexample-1
 
