@@ -25,9 +25,14 @@ https://eli.thegreenplace.net/tag/go
 https://github.com/avelino/awesome-go?tab=readme-ov-file#contents
 
 
+
 ### 20241020-go-file-upload
 
 https://freshman.tech/file-upload-golang/?ref=related-posts  30 mins
+
+### 20241019-go-code-snippets-1
+
+https://www.golangcode.com/  30 mins
 
 ### 20241009-go-gobyexample-2
 
