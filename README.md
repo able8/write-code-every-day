@@ -16,21 +16,18 @@ https://johnresig.com/blog/write-code-every-day/
 
 ## TODO
 
+https://github.com/able8/write-code-every-day/issues/1
+
 https://medium.com/justforfunc
-
-https://darjun.github.io/post/
-
-https://able8.medium.com/use-client-go-to-generate-an-event-object-in-kuberentes-b0d2ea356528
-
-https://freshman.tech/file-upload-golang/?ref=related-posts
 
 https://eli.thegreenplace.net/tag/go
 
 https://github.com/avelino/awesome-go?tab=readme-ov-file#contents
 
-https://ollama.com/library
 
-20241009 20:49 周三
+### 20241020-go-file-upload
+
+https://freshman.tech/file-upload-golang/?ref=related-posts  30 mins
 
 ### 20241009-go-gobyexample-2
 
