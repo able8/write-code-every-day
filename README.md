@@ -26,6 +26,10 @@ https://github.com/avelino/awesome-go?tab=readme-ov-file#contents
 
 
 
+### 20241021-go-code-snippets-2
+
+https://www.golangcode.com/ 30 mins
+
 ### 20241020-go-file-upload
 
 https://freshman.tech/file-upload-golang/?ref=related-posts  30 mins
