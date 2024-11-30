@@ -25,6 +25,9 @@ https://eli.thegreenplace.net/tag/go
 https://github.com/avelino/awesome-go?tab=readme-ov-file#contents
 
 
+### 20241130-go-keepalive-requests
+
+https://mp.weixin.qq.com/s?__biz=MjM5NDEzNjU3OA
 
 ### 20241021-go-code-snippets-2
 
