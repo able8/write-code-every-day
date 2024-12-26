@@ -25,6 +25,12 @@ https://eli.thegreenplace.net/tag/go
 https://github.com/avelino/awesome-go?tab=readme-ov-file#contents
 
 
+### 20241226-go-channel
+
+https://mp.weixin.qq.com/s?__biz=MzI1ODMxMDA4NA==&mid=2247485154&idx=1&sn=d2daeb3d8bca5f1deffb23c318392e2b&scene=58&subscene=0
+
+### 20241226-go-run-in-goroutine
+
 ### 20241130-go-keepalive-requests
 
 https://mp.weixin.qq.com/s?__biz=MjM5NDEzNjU3OA
