@@ -25,6 +25,11 @@ https://eli.thegreenplace.net/tag/go
 https://github.com/avelino/awesome-go?tab=readme-ov-file#contents
 
 
+
+### 20241227-go-cmp
+
+https://darjun.github.io/2020/03/20/godailylib/go-cmp/
+
 ### 20241226-go-channel
 
 https://mp.weixin.qq.com/s?__biz=MzI1ODMxMDA4NA==&mid=2247485154&idx=1&sn=d2daeb3d8bca5f1deffb23c318392e2b&scene=58&subscene=0
