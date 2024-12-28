@@ -26,6 +26,8 @@ https://github.com/avelino/awesome-go?tab=readme-ov-file#contents
 
 
 
+20241228-go-bitmap
+
 ### 20241227-go-cmp
 
 https://darjun.github.io/2020/03/20/godailylib/go-cmp/
