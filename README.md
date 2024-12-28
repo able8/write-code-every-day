@@ -25,6 +25,9 @@ https://eli.thegreenplace.net/tag/go
 https://github.com/avelino/awesome-go?tab=readme-ov-file#contents
 
 
+20241229-go-dconf
+
+https://www.cnblogs.com/cheyunhua/p/18579722
 
 20241228-go-bitmap
 
