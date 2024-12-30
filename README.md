@@ -24,6 +24,13 @@ https://eli.thegreenplace.net/tag/go
 
 https://github.com/avelino/awesome-go?tab=readme-ov-file#contents
 
+---
+
+
+
+20241230-go-range-functions
+
+https://go.dev/blog/range-functions
 
 20241229-go-dconf
 
