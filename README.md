@@ -27,6 +27,9 @@ https://github.com/avelino/awesome-go?tab=readme-ov-file#contents
 ---
 
 
+20250101-go-signal-and-graceful-shutdown
+
+https://mp.weixin.qq.com/s?__biz=MzU2MDA0Mzk0OQ==&mid=2247486664&idx=1&sn=ed96b141ea6fe125a49057ce7bcf8666&scene=58&subscene=0
 
 20250101-go-visitor-pattern
 
