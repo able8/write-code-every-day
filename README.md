@@ -28,6 +28,10 @@ https://github.com/avelino/awesome-go?tab=readme-ov-file#contents
 
 
 
+20250101-go-visitor-pattern
+
+https://refactoring.guru/design-patterns/visitor/go/example
+
 20241230-go-range-functions
 
 https://go.dev/blog/range-functions
