@@ -26,6 +26,10 @@ https://github.com/avelino/awesome-go?tab=readme-ov-file#contents
 
 ---
 
+20250105-go-brain-teasers
+
+https://pragprog.com/titles/d-gobrain/go-brain-teasers/
+
 
 20250102-go-templ
 
