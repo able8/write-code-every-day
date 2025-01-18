@@ -1,0 +1,8 @@
+filters:
+  - name: filter pod1
+    clusterRegex: cluster1
+    namespaceRegex: ns1
+    resourceNameRegex: pod1
+  - name: 2
+    # resourceNameRegex: pod1
+    namespaceRegex: ns2

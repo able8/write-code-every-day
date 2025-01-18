@@ -24,7 +24,11 @@ https://eli.thegreenplace.net/tag/go
 
 https://github.com/avelino/awesome-go?tab=readme-ov-file#contents
 
+
 ---
+
+20250118-go-k8s-resource-filter  70 mins
+
 
 20250105-go-brain-teasers
 
